@@ -1,0 +1,39 @@
+:lang(ar).navbar_container {
+  font-family: "Arabic Evest";
+}
+.navbar_container {
+  background-color: #fff;
+  border-bottom: 1px solid #c4edeb;
+  padding: 0 2rem 0 0rem;
+}
+
+:lang(ar) .navbar_container {
+  padding: 0 0 0 2rem;
+}
+
+#list > li {
+  list-style-type: none;
+  color: #111;
+}
+.icons_navbar_container {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+#srch_btn {
+  border: none;
+  background-color: transparent;
+}
+
+@media screen and (max-width: 767px) {
+  .navbar_container {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .navbar_container_mobile {
+    display: none;
+  }
+}

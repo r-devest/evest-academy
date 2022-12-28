@@ -1,3 +1,42 @@
+@font-face {
+  font-family: "Arabic Evest";
+  src: url("/fonts/EvestMedium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Arabic Evest2";
+  src: url("/fonts/GE SS Two/GE SS Text UltraLight.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Arabic Evest 3";
+  src: url("/fonts/Gotham/Gotham-Medium.otf") format("truetype");
+}
+@font-face {
+  font-family: "English Evest";
+  src: url("/fonts/Gotham/Gotham-Medium.otf") format("truetype");
+}
+@font-face {
+  font-family: "English Evest2";
+  src: url("/fonts/Gotham/Gotham-ExtraLight.otf") format("truetype");
+}
+:root {
+  --primary-color1: #022a3a;
+  --primary-color2: #058080;
+  --primary-color3: #64f0e3;
+  --supportive-color1: #0b0b0b;
+  --supportive-color2: #b7b8ba;
+  --supportive-color3: #dccb84;
+  --secondary-color1: #42135b;
+  --secondary-color2: #0036b0;
+  --secondary-color3: #1e2d80;
+  --secondary-color4: #1b4544;
+  --secondary-color5: #880004;
+  --secondary-color6: #9b6523;
+}
+
 html,
 body {
   padding: 0;
@@ -19,8 +58,34 @@ a {
   html {
     color-scheme: dark;
   }
-  body {
-    color: white;
-    background: black;
+}
+
+/*Phone Styling*/
+.iti__flag {
+  background-image: url("/node_modules/intl-tel-input/build/img/flags.png");
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .iti__flag {
+    background-image: url("/node_modules/intl-tel-input/build/img/flags@2x.png");
   }
+}
+.intl-tel-input {
+  width: 100% !important;
+  direction: ltr;
+}
+.input-group-text {
+  background-color: white;
+  border-right: none;
+  border-radius: 0px !important;
+}
+.intl-tel-input input,
+.intl-tel-input input[type="text"],
+.intl-tel-input input[type="tel"] {
+  direction: ltr;
+}
+
+.form-control {
+  border-radius: 0px !important;
+  /* border-left: none; */
+  direction: ltr;
 }

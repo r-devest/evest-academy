@@ -1,0 +1,195 @@
+.Footer {
+  background-image: url("/Images/footer/Pattern.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 2rem;
+  padding-top: 3.5rem;
+  position: relative;
+  background-color: white;
+}
+
+#first_section_container {
+  display: flex;
+  justify-content: space-between;
+}
+
+#first_section,
+#second_section {
+  display: flex;
+  align-items: center;
+}
+
+#first_section_para_col {
+  width: 50%;
+}
+
+#first_section_para_col p {
+  font-size: 0.75em;
+}
+
+#second_section {
+  margin-left: -2rem;
+}
+
+#social_media_container > a > img {
+  margin-top: -1rem;
+  margin-left: 1rem;
+}
+
+:lang(en) #social_media_container > a > img {
+  margin-right: 1rem;
+  margin-left: 0;
+}
+
+.app_icon {
+  margin-top: -0.5rem;
+  padding-left: 0.5rem;
+}
+
+:lang(en) .app_icon {
+  padding-left: 0;
+  padding-right: 0.5rem;
+}
+
+#second_section_container {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+#second_section_container > div > h3 {
+  font-weight: 700;
+  font-size: 22px;
+  color: #11807e;
+}
+
+#second_section_container > div > h3 {
+  font-family: "Evest Arabic", sans-serif !important;
+}
+
+#second_section_container > div > h4 {
+  font-weight: 700;
+  font-size: 16px;
+  color: #11807e;
+}
+
+#second_section_container > div > h4 {
+  font-family: "Evest Arabic", sans-serif !important;
+}
+
+#second_section_container > div > hr {
+  width: 90%;
+  height: 2px;
+  color: #11807e;
+}
+
+.Footer_2 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: #072a38;
+}
+
+#credit_card_container {
+  display: grid;
+  grid-template-columns: 70px 70px 70px 70px 70px 70px 70px 70px;
+  align-items: center;
+  justify-content: center;
+}
+
+.Footer_2 > hr {
+  color: #b4bfc3;
+}
+
+#footer2_long_paragraph_col p {
+  font-weight: 325;
+  width: 100%;
+  font-size: 12px;
+  line-height: 160%;
+  color: #ffffff;
+}
+
+#footer2_long_paragraph_col .underlined_span {
+  text-decoration: underline white;
+}
+
+#footer2_long_paragraph_col .bolded_span {
+  font-family: "Evest Bold";
+}
+
+:lang(ar) #footer2_long_paragraph_col .bolded_span {
+  font-family: "Evest Arabic", sans-serif;
+}
+
+:lang(ar) #footer2_long_paragraph_col {
+  font-family: "Evest Arabic2", sans-serif;
+  word-spacing: 2px;
+}
+
+@media screen and (min-width: 768px) {
+  #social_media_icons_para_mob {
+    display: none;
+  }
+
+  :lang(en) #first_section_para_col p {
+    font-size: 0.6em;
+  }
+
+  #first_section_container_mobile {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #first_section_para_col p {
+    display: none;
+  }
+
+  #social_media_icons_para {
+    display: none;
+  }
+
+  #second_section_container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #second_section_container > div {
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+  }
+
+  #credit_card_container {
+    grid-template-columns: 70px 70px 70px 70px;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 1rem;
+    justify-items: center;
+  }
+
+  #credit_card_container > img {
+    padding: 0;
+  }
+
+  #first_section_container {
+    display: none;
+  }
+
+  #first_section_container_mobile > #logo_social_media_icons_container {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+  }
+
+  #first_section_container_mobile > #para_col {
+    font-weight: 325;
+    font-size: 11px;
+    line-height: 155%;
+    color: #737373;
+  }
+
+  #second_section_container > div > hr {
+    width: 100%;
+    height: 2px;
+    color: #11807e;
+  }
+}
