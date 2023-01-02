@@ -1,0 +1,19 @@
+.navSearchBarContainer {
+    display: flex;
+    position: fixed;
+    /* background-color: #6ebac9; */
+    background-color: #9BD2D0;
+    width: 100%;
+    height: 170px;
+    z-index: 10;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.searchBarStyle {
+    width: 100%;
+    padding: 10px 10px;
+    outline: none;
+    border-radius: 7px;
+    border: none;
+    box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.05), 0px 9px 14px rgba(0, 0, 0, 0.08);
+}

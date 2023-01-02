@@ -1,0 +1,36 @@
+{
+    "data": [
+        {
+            "links": [
+                {
+                    "link": "/"
+                },
+                {
+                    "link": "/trade/docs-and-pol"
+                },
+                {
+                    "link": "/register"
+                },
+                {
+                    "link": "/company/contact-us"
+                }
+            ]
+        },
+        {
+            "links": [
+                {
+                    "link": "/ar?lang=ar"
+                },
+                {
+                    "link": "/ar/خدمات-التداول/نسخ-الصفقات?lang=ar#/"
+                },
+                {
+                    "link": "/ar/register?lang=ar"
+                },
+                {
+                    "link": "/ar/الشركة/اتصل-بنا?lang=ar"
+                }
+            ]
+        }
+    ]
+}
