@@ -1,0 +1,44 @@
+.footer_container {
+  background-image: url("/images/Footer/Pattern.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 2rem 4rem 2rem 4rem;
+}
+.footer_first_section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.footer_first_section p {
+  font-style: normal;
+  font-weight: 325;
+  font-size: 14px;
+  width: 70%;
+  color: #072a38;
+  font-family: "English Evest2";
+}
+:lang(ar) .footer_first_section p {
+  font-family: "Arabic Evest";
+}
+.social_media_icons {
+  display: flex;
+  justify-content: flex-start;
+  gap: 0.5rem;
+}
+.footer_second_section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-top: 2rem;
+}
+:lang(ar) .footer_container {
+  direction: rtl;
+  padding: 0 2rem 2rem 0rem;
+}
+
+@media screen and (max-width: 767px) {
+  .footer_second_section {
+    grid-template-columns: 1fr;
+  }
+  .footer_first_section {
+    grid-template-columns: 1fr 1fr;
+  }
+}

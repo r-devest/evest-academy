@@ -1,0 +1,22 @@
+:lang(ar) .subcolumn_container {
+  font-family: "Arabic Evest";
+}
+.subcolumn_container p {
+  width: 50%;
+  font-family: "English Evest2";
+  font-weight: bold;
+  font-size: 16px;
+  color: #072a38;
+}
+
+.subcolumn_container h6 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #11807e;
+}
+
+@media screen and (max-width: 767px) {
+  .subcolumn_container p {
+    width: 100%;
+  }
+}

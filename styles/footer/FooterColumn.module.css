@@ -1,0 +1,17 @@
+.heading_container hr {
+  width: 90%;
+  height: 2px;
+  color: #11807e;
+}
+
+.column_heading {
+  font-weight: 700;
+  font-size: 22px;
+  color: #11807e;
+}
+
+@media screen and (max-width: 767px) {
+  .heading_container {
+    margin-bottom: 2rem;
+  }
+}

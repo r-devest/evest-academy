@@ -8,7 +8,7 @@ import { MdKeyboardArrowRight, MdKeyboardArrowLeft } from "react-icons/md";
 import content from "../../data/navMenu.content.json";
 import unOrderedLinks from "../../data/urls.json";
 import styles from "../../styles/navMenu.module.css";
-import { Head } from "next/document";
+// import { Head } from "next/document";
 import Script from "next/script";
 import $ from "jquery";
 
@@ -134,50 +134,12 @@ export default function Navmenu() {
   return (
     <div
       style={{
-        position: `${isHomePage === "/" ? "absolute" : ""}`,
-        zIndex: `${isHomePage === "/" ? "2" : ""}`,
         width: "100%",
       }}
     >
       {displaySearchBar == true ? (
         <NavSearchBar close={closeSearchBar} />
       ) : null}
-
-      {isHomePage === "/" ? (
-        <style>
-          {`
-          #Header .roboto-pandats .icon-pandats,
-          #Header .roboto-pandats .first-last-name-pandats {
-            color: white;
-          }
-
-          #Header .roboto-pandats {
-          background-color: transparent;
-          border: 1px solid white;
-          padding: 5px 0;
-          margin: 0 10px;
-          border-radius: 10px;
-          }
-          `}
-        </style>
-      ) : (
-        <style>
-          {`
-          #Header .roboto-pandats .icon-pandats,
-          #Header .roboto-pandats .first-last-name-pandats {
-            color: black;
-          }
-
-          #Header .roboto-pandats {
-          background-color: transparent;
-          border: 1px solid #16A2A0;
-          padding: 5px 0;
-          margin: 0 10px;
-          border-radius: 10px;
-          }
-          `}
-        </style>
-      )}
 
       <div id="pts-forx-init-wraper">
         {/* <panda-forex-init></panda-forex-init> */}
@@ -186,18 +148,12 @@ export default function Navmenu() {
         <panda-forex-deposit-credit show-button="false"></panda-forex-deposit-credit>
       </div>
 
-      <div
-        className={
-          isHomePage === "/"
-            ? styles.navMenuContainer
-            : styles.navColorBackground
-        }
-      >
+      <div className={styles.navColorBackground}>
         <Navbar
           expand="lg"
           id="navbarContainer"
           style={{ padding: "0 15px" }}
-          className={isHomePage === "/" ? styles.whiteNav : styles.blackNav}
+          className={styles.whiteNav}
         >
           {/* <Container> */}
 

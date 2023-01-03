@@ -1,0 +1,108 @@
+{
+    "data": [
+        {
+            "lang" : "en",
+            "content": [
+                {
+                    
+                    "header" : "Get In Touch",
+
+
+
+
+                    
+                    "links" : [
+                        {"text" : " support@evest.com", "href" : "" ,"hasTitle" : false ,"title":"","clickable" : false},
+                        {"text" : " Atriafinancial LTD, S.I.P. Building , P.O Box 3010Rue Pasteur , Port Vila Vanuatu.", "href" : "" ,"hasTitle" : false ,"clickable" : false},
+                        {"text" : "+971-800-0311-1248", "href" : "" ,"hasTitle" : true ,"title":"UAE - Toll-Free:","clickable" : false},
+                        {"text" : " +966-800-850-1019", "href" : "" ,"hasTitle" : true ,"title":"Saudi Arabia - Toll-Free:","clickable" : false}
+                        
+                    ]
+                },
+                {
+                  
+                    "header" : "Trading",
+                    "links" : [
+                        
+
+
+
+                        {"text" : "Trading Account Types", "href" : "/","hasTitle" : false, "title" : "title" , "clickable" : true},
+                        {"text" : "0 Commission Stocks Trading", "href" : "/","hasTitle" : false, "title" : "title" , "clickable" : true},
+                        {"text" : "Trading Demo Account", "href" : "/","hasTitle" : false, "title" : "title" , "clickable" : true},
+                        {"text" : "Islamic Trading Account", "href" : "/","hasTitle" : false, "title" : "title" , "clickable" : true}
+                    ]
+                },
+                {
+                   
+                    "header" : "Additional Links",
+                    "links" : [
+                        
+
+
+
+
+                        {"text" : "Regulatory Authorization", "href" : "/","hasTitle" : false, "title" : "title" , "clickable" : true},
+                        {"text" : "Deposits & Withdrawals", "href" : "/","hasTitle" : false, "title" : "title" , "clickable" : true},
+                        {"text" : "Become Partner", "href" : "/","hasTitle" : false, "title" : "title" , "clickable" : true},
+                        {"text" : "Trading Hours", "href" : "/","hasTitle" : false, "title" : "title" , "clickable" : true},
+                        {"text" : "Trading Fees", "href" : "/","hasTitle" : false, "title" : "title" , "clickable" : true}
+                    ]
+                }
+            ]
+        },
+        {
+            "lang" : "ar",
+            "content": [
+                {
+                    
+                    "header" : "تواصل معنا",
+
+
+
+
+                    
+                    "links" : [
+                        {"text" : " support@evest.com", "href" : "" ,"hasTitle" : false ,"title":"","clickable" : false},
+                        {"text" : " شركة أتريا المالية المحدودة طريق كومول السريع مبنى جوفانت 1276 بورت فيلا فانواتوايوي اومولوجيتس", "href" : "" ,"hasTitle" : false ,"clickable" : false},
+                        {"text" : "+971-800-0311-1248", "href" : "" ,"hasTitle" : true ,"title":"الإمارات العربية المتحدة - اتصال مجاني:","clickable" : false},
+                        {"text" : " +966-800-850-1019", "href" : "" ,"hasTitle" : true ,"title":"المملكة العربية السعودية - اتصال مجاني:","clickable" : false}
+                        
+                    ]
+                },
+                {
+                  
+                    "header" : "التّداول",
+                    "links" : [
+                        
+
+
+
+                        {"text" : "أنواع حسابات التّداول", "href" : "/","hasTitle" : false, "title" : "title" , "clickable" : true},
+                        {"text" : "0% عمولة تداول الأسهم", "href" : "/","hasTitle" : false, "title" : "title" , "clickable" : true},
+                        {"text" : "حساب تداول تجريبي  ", "href" : "/","hasTitle" : false, "title" : "title" , "clickable" : true},
+                        {"text" : "حساب تداول اسلامي", "href" : "/","hasTitle" : false, "title" : "title" , "clickable" : true}
+                    ]
+                },
+                {
+                   
+                    "header" : "روابط إضافية ",
+                    "links" : [
+                        
+
+
+
+
+                        {"text" : "التنظيم والخصوصية", "href" : "/","hasTitle" : false, "title" : "title" , "clickable" : true},
+                        {"text" : "الودائع والسحوبات", "href" : "/","hasTitle" : false, "title" : "title" , "clickable" : true},
+                        {"text" : "كُن شريكًا", "href" : "/","hasTitle" : false, "title" : "title" , "clickable" : true},
+                        {"text" : "أوقات التّداول", "href" : "/","hasTitle" : false, "title" : "title" , "clickable" : true},
+                        {"text" : "رسوم التّداول", "href" : "/","hasTitle" : false, "title" : "title" , "clickable" : true}
+                    ]
+                }
+            ]
+        }
+
+      
+    ]
+}
