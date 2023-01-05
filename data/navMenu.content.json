@@ -66,7 +66,7 @@
                 },
                 {
                     "header": {
-                        "name": "Sign in",
+                        "name": "Help Center",
                         "links": "/"
                     }
                 }
@@ -140,7 +140,7 @@
                 },
                 {
                     "header": {
-                        "name": "تسجيل الدخول",
+                        "name": "مركز المساعدة",
                         "links": "#"
                     }
                 }

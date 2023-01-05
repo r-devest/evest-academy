@@ -246,7 +246,7 @@ export default function Navmenu() {
                 }
                 onClick={handleNavClick}
               >
-                <Nav.Link id="collasible-nav-dropdown" href="/">
+                <Nav.Link id="collasible-nav-dropdown" href="/How-To">
                   {content.data[languageIndex].navHeaders[0].header.name}
                 </Nav.Link>
 
@@ -264,7 +264,7 @@ export default function Navmenu() {
                 }
                 onClick={handleNavClick}
               >
-                <Nav.Link id="collasible-nav-dropdown" href="/">
+                <Nav.Link id="collasible-nav-dropdown" href="/Topics">
                   {content.data[languageIndex].navHeaders[1].header.name}
                 </Nav.Link>
 
@@ -283,7 +283,7 @@ export default function Navmenu() {
                 }
                 onClick={handleNavClick}
               >
-                <Nav.Link id="collasible-nav-dropdown" href="/">
+                <Nav.Link id="collasible-nav-dropdown" href="/Webinars">
                   {content.data[languageIndex].navHeaders[2].header.name}
                 </Nav.Link>
 
@@ -300,7 +300,7 @@ export default function Navmenu() {
                 }
                 onClick={handleNavClick}
               >
-                <Nav.Link id="collasible-nav-dropdown" href="/">
+                <Nav.Link id="collasible-nav-dropdown" href="/Glossary">
                   {content.data[languageIndex].navHeaders[3].header.name}
                 </Nav.Link>
 

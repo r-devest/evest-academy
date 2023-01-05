@@ -1,6 +1,8 @@
 import "../styles/globals.css";
 import { SSRProvider } from "@react-aria/ssr";
 import Head from "next/head";
+import Footer from "../components/Footer";
+import Navbar1 from "../components/homePage/Navbar1";
 function MyApp({ Component, pageProps }) {
   return (
     <>
@@ -12,8 +14,13 @@ function MyApp({ Component, pageProps }) {
             integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
             crossOrigin="anonymous"
           />
+          <title>Evest Academy</title>
+          <meta name="description" content="" />
+          <link rel="icon" href="/evestLogo.png" />
         </Head>
+        <Navbar1 />
         <Component {...pageProps} />
+        <Footer />
       </SSRProvider>
     </>
   );

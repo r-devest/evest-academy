@@ -63,10 +63,10 @@
 
                     
                     "links" : [
-                        {"text" : " support@evest.com", "href" : "" ,"hasTitle" : false ,"title":"","clickable" : false},
+                        {"text" : "support@evest.com", "href" : "" ,"hasTitle" : false ,"title":"","clickable" : false},
                         {"text" : " شركة أتريا المالية المحدودة طريق كومول السريع مبنى جوفانت 1276 بورت فيلا فانواتوايوي اومولوجيتس", "href" : "" ,"hasTitle" : false ,"clickable" : false},
-                        {"text" : "+971-800-0311-1248", "href" : "" ,"hasTitle" : true ,"title":"الإمارات العربية المتحدة - اتصال مجاني:","clickable" : false},
-                        {"text" : " +966-800-850-1019", "href" : "" ,"hasTitle" : true ,"title":"المملكة العربية السعودية - اتصال مجاني:","clickable" : false}
+                        {"text" : "971-800-0311-1248+", "href" : "" ,"hasTitle" : true ,"title":"الإمارات العربية المتحدة - اتصال مجاني:","clickable" : false},
+                        {"text" : " 966-800-850-1019+", "href" : "" ,"hasTitle" : true ,"title":"المملكة العربية السعودية - اتصال مجاني:","clickable" : false}
                         
                     ]
                 },

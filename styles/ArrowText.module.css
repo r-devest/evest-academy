@@ -1,0 +1,20 @@
+.arrowtext_container {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+.arrowtext_container p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #444444;
+}
+:lang(ar) .arrowtext_container p {
+  font-family: "Arabic Evest2";
+}
+:lang(ar) .arrowtext_container {
+  direction: rtl;
+}
+:lang(ar) .arrowtext_container img {
+  transform: rotateY(180deg);
+}

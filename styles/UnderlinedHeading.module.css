@@ -1,13 +1,13 @@
-.heading_container hr {
-  width: 90%;
+.headline_container hr {
+  width: 380px;
   height: 2px;
   color: #11807e;
 }
 
-.column_heading {
+.headline_container h6 {
   font-weight: 700;
   font-size: 22px;
-  color: #11807e;
+  color: #072a38;
 }
 :lang(ar) .column_heading {
   font-family: "Arabic Evest";
@@ -16,5 +16,8 @@
 @media screen and (max-width: 767px) {
   .heading_container {
     margin-bottom: 2rem;
+  }
+  .headline_container hr {
+    width: 343px;
   }
 }

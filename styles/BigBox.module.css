@@ -1,0 +1,42 @@
+.box_container {
+  width: 580px;
+  height: 379px;
+  background: #ffffff;
+  box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.05), 0px 2px 14px rgba(0, 0, 0, 0.08);
+  border-radius: 15px;
+  padding: 0.5rem;
+}
+
+.box_container > img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 0.5rem;
+}
+.box_container > h3 {
+  margin-top: 0.5rem;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 27px;
+  color: #072a38;
+}
+.para_container {
+  display: flex;
+  gap: 1.5rem;
+}
+.lessons_container,
+.duration_container {
+  display: flex;
+  align-items: baseline;
+  gap: 0.25rem;
+}
+.lessons_container > p {
+  font-weight: 325;
+  font-size: 16px;
+  color: #444444;
+}
+.duration_container > p {
+  font-weight: 325;
+  font-size: 16px;
+  color: #444444;
+}

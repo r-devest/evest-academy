@@ -1,0 +1,25 @@
+.bracket_mobile,
+.bracket_desktop {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+  .bracket_desktop {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .bracket_mobile {
+    display: none;
+  }
+}
+
+:lang(ar) .bracket_desktop svg {
+  transform: rotateY(180deg);
+}
+:lang(ar) .bracket_mobile svg {
+  transform: rotateY(180deg);
+}

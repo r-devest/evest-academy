@@ -1,0 +1,21 @@
+.arrow_container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  gap: 0.75rem;
+}
+.arrrow_container p {
+  font-weight: 325;
+  font-size: 18px;
+  text-align: right;
+  color: #345562;
+}
+:lang(ar) .arrow_container p {
+  font-family: "Arabic Evest2";
+}
+:lang(ar) .arrow_container {
+  direction: rtl;
+}
+:lang(ar) .arrow_container img {
+  transform: rotateY(180deg);
+}
