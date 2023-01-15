@@ -27,16 +27,43 @@
 .lessons_container,
 .duration_container {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   gap: 0.25rem;
 }
 .lessons_container > p {
   font-weight: 325;
   font-size: 16px;
   color: #444444;
+  margin-bottom: 0;
 }
 .duration_container > p {
   font-weight: 325;
   font-size: 16px;
   color: #444444;
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .box_container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 12px 12px 16px;
+    gap: 16px;
+    width: 343px;
+    height: 303px;
+    background: #ffffff;
+    box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.05),
+      0px 2px 14px rgba(0, 0, 0, 0.08);
+    border-radius: 15px;
+  }
+  .box_container h3 {
+    font-size: 18px;
+    margin-top: 0.5rem;
+    line-height: 0;
+  }
+  .box_container > img {
+    width: 319px;
+    height: 203px;
+  }
 }

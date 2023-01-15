@@ -1,6 +1,6 @@
 .arrow_container {
   display: flex;
-  align-items: flex-start;
+  align-items: baseline;
   justify-content: flex-end;
   gap: 0.75rem;
 }
@@ -18,4 +18,10 @@
 }
 :lang(ar) .arrow_container img {
   transform: rotateY(180deg);
+}
+
+@media screen and (max-width: 767px) {
+  .arrow_container p {
+    margin-bottom: 0;
+  }
 }

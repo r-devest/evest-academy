@@ -11,7 +11,12 @@ export default function BigBox(props) {
           <h3>{props.title}</h3>
           <div className={styles.para_container}>
             <div className={styles.lessons_container}>
-              <Image src="/images/lesson.svg" width={20} height={20} />
+              <Image
+                src="/images/lesson.svg"
+                width={20}
+                height={20}
+                id={styles.lesson_img_desktop}
+              />
               <p>{props.lessons_number}</p>
             </div>
             <div className={styles.duration_container}>

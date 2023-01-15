@@ -13,6 +13,10 @@
   display: block;
   margin-left: 1rem;
 }
+:lang(ar) .MedBox > img {
+  margin-left: 0;
+  margin-right: 1rem;
+}
 .text_content > h3 {
   margin-top: 0.5rem;
   font-weight: 700;
@@ -27,14 +31,14 @@
 .lessons_container,
 .duration_container {
   display: flex;
-  align-items: baseline;
+  align-items: flex-end;
   gap: 0.25rem;
 }
 .lessons_container > p {
   font-weight: 325;
   font-size: 16px;
   color: #444444;
-  /* margin-top: -2rem; */
+  margin-bottom: 0;
 }
 .duration_container > p {
   font-weight: 325;
@@ -42,4 +46,36 @@
   line-height: 19px;
   color: #444444;
   margin-top: -1rem;
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .MedBox {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 12px 12px 16px;
+    gap: 16px;
+    width: 343px;
+    height: 303px;
+    background: #ffffff;
+    box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.05),
+      0px 2px 14px rgba(0, 0, 0, 0.08);
+    border-radius: 15px;
+  }
+  .MedBox > img {
+    width: 319px;
+    height: 203px;
+    display: block;
+    margin-left: auto;
+    margin-right: 0;
+    padding-top: 0.5rem;
+  }
+  .text_content h3 {
+    font-size: 18px;
+    margin-top: 0;
+  }
+  :lang(ar) .MedBox > img {
+    margin-right: 0;
+  }
 }

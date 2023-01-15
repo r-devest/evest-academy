@@ -9,6 +9,19 @@
   .bracket_desktop {
     display: none;
   }
+  .bracket_mobile {
+    margin-right: 3rem;
+  }
+  :lang(ar) .bracket_mobile {
+    margin-right: 0;
+    margin-left: 3rem;
+  }
+  .bracket_mobile h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 22px;
+  }
 }
 
 @media screen and (min-width: 768px) {

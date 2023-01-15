@@ -149,7 +149,7 @@ export default function Home() {
               font_color="#11807E"
               text="Introductory e-books"
             />
-            <Arrow text="View all" link="/" />
+            <Arrow text="View" link="/" />
           </div>
           <div className={styles.s5_body}>
             <TextBox

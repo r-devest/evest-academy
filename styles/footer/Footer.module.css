@@ -7,6 +7,9 @@
 :lang(ar) .footer_container {
   padding: 3rem 4rem 2rem 4rem;
 }
+.footer_container > div {
+  max-width: 1200px;
+}
 .footer_first_section {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
