@@ -462,7 +462,7 @@ export default function Navmenu() {
                     }}
                   >
                     <Image
-                      src={"/Images/navbar/help.png"}
+                      src={"/images/navbar/help.png"}
                       width={18}
                       height={18}
                     />
