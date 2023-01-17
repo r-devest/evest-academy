@@ -186,21 +186,21 @@ export default function Navmenu() {
             >
               {isHomePage === "/" && router.locale === "en" ? (
                 <Image
-                  src={"/Images/navbar/logoAcademy.svg"}
+                  src={"/images/navbar/logoAcademy.svg"}
                   width={"130"}
                   height={47.67}
                 />
               ) : isHomePage === "/" && router.locale === "ar" ? (
                 // logo in arabic
                 <Image
-                  src={"/Images/navbar/logoAcademy.svg"}
+                  src={"/images/navbar/logoAcademy.svg"}
                   width={"130"}
                   height={47.67}
                 />
               ) : (
                 // logo in english
                 <Image
-                  src={"/Images/navbar/logoAcademy.svg"}
+                  src={"/images/navbar/logoAcademy.svg"}
                   width={"130"}
                   height={47.67}
                 />
