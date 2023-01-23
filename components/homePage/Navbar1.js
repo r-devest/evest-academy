@@ -246,10 +246,32 @@ export default function Navmenu() {
                 }
                 onClick={handleNavClick}
               >
-                <Nav.Link id="collasible-nav-dropdown" href="/How-To">
-                  {content.data[languageIndex].navHeaders[0].header.name}
-                </Nav.Link>
-
+                {/* How-to tab */}
+                {router.locale == "en" ? (
+                  <>
+                    <Nav.Link
+                      id="collasible-nav-dropdown"
+                      href={
+                        content.data[languageIndex].navHeaders[0].header
+                          .links[0].linkURL
+                      }
+                    >
+                      {content.data[languageIndex].navHeaders[0].header.name}
+                    </Nav.Link>
+                  </>
+                ) : (
+                  <>
+                    <Nav.Link
+                      id="collasible-nav-dropdown"
+                      href={
+                        content.data[languageIndex].navHeaders[0].header
+                          .links[0].linkURL
+                      }
+                    >
+                      {content.data[languageIndex].navHeaders[0].header.name}
+                    </Nav.Link>
+                  </>
+                )}
                 <MdKeyboardArrowRight className={styles.rightArrow} />
               </div>
               <div
@@ -264,9 +286,32 @@ export default function Navmenu() {
                 }
                 onClick={handleNavClick}
               >
-                <Nav.Link id="collasible-nav-dropdown" href="/Topics">
-                  {content.data[languageIndex].navHeaders[1].header.name}
-                </Nav.Link>
+                {/* Topics tab */}
+                {router.locale == "en" ? (
+                  <>
+                    <Nav.Link
+                      id="collasible-nav-dropdown"
+                      href={
+                        content.data[languageIndex].navHeaders[1].header
+                          .links[0].linkURL
+                      }
+                    >
+                      {content.data[languageIndex].navHeaders[1].header.name}
+                    </Nav.Link>
+                  </>
+                ) : (
+                  <>
+                    <Nav.Link
+                      id="collasible-nav-dropdown"
+                      href={
+                        content.data[languageIndex].navHeaders[1].header
+                          .links[0].linkURL
+                      }
+                    >
+                      {content.data[languageIndex].navHeaders[1].header.name}
+                    </Nav.Link>
+                  </>
+                )}
 
                 <MdKeyboardArrowRight className={styles.rightArrow} />
               </div>
@@ -283,10 +328,32 @@ export default function Navmenu() {
                 }
                 onClick={handleNavClick}
               >
-                <Nav.Link id="collasible-nav-dropdown" href="/Webinars">
-                  {content.data[languageIndex].navHeaders[2].header.name}
-                </Nav.Link>
-
+                {/* Webinars tab */}
+                {router.locale == "en" ? (
+                  <>
+                    <Nav.Link
+                      id="collasible-nav-dropdown"
+                      href={
+                        content.data[languageIndex].navHeaders[2].header
+                          .links[0].linkURL
+                      }
+                    >
+                      {content.data[languageIndex].navHeaders[2].header.name}
+                    </Nav.Link>
+                  </>
+                ) : (
+                  <>
+                    <Nav.Link
+                      id="collasible-nav-dropdown"
+                      href={
+                        content.data[languageIndex].navHeaders[2].header
+                          .links[0].linkURL
+                      }
+                    >
+                      {content.data[languageIndex].navHeaders[2].header.name}
+                    </Nav.Link>
+                  </>
+                )}
                 <MdKeyboardArrowRight className={styles.rightArrow} />
               </div>
 
@@ -300,9 +367,32 @@ export default function Navmenu() {
                 }
                 onClick={handleNavClick}
               >
-                <Nav.Link id="collasible-nav-dropdown" href="/Glossary">
-                  {content.data[languageIndex].navHeaders[3].header.name}
-                </Nav.Link>
+                {/* Glossary tab */}
+                {router.locale == "en" ? (
+                  <>
+                    <Nav.Link
+                      id="collasible-nav-dropdown"
+                      href={
+                        content.data[languageIndex].navHeaders[3].header
+                          .links[0].linkURL
+                      }
+                    >
+                      {content.data[languageIndex].navHeaders[3].header.name}
+                    </Nav.Link>
+                  </>
+                ) : (
+                  <>
+                    <Nav.Link
+                      id="collasible-nav-dropdown"
+                      href={
+                        content.data[languageIndex].navHeaders[3].header
+                          .links[0].linkURL
+                      }
+                    >
+                      {content.data[languageIndex].navHeaders[3].header.name}
+                    </Nav.Link>
+                  </>
+                )}
 
                 <MdKeyboardArrowRight className={styles.rightArrow} />
               </div>
@@ -319,87 +409,8 @@ export default function Navmenu() {
                 }
                 onClick={handleNavClick}
               >
-                {/* <NavDropdown
-                  title={content.data[languageIndex].navHeaders[4].header.name}
-                  id="collasible-nav-dropdown"
-                >
-                  {content.data[languageIndex].navHeaders[4].header.links.map(
-                    (i) => {
-                      return (
-                        <div
-                          className={styles.parentNavSubCategoryContainer}
-                          key={i.linkName}
-                        >
-                          <NavDropdown.Item href={`${i.linkURL}`}>
-                            {i.sub ? (
-                              <div
-                                style={{
-                                  display: "flex",
-                                  justifyContent: "space-between",
-                                  alignItems: "center",
-                                }}
-                              >
-                                <div>{i.linkName}</div>
-                                {router.locale === "ar" ? (
-                                  <MdKeyboardArrowLeft />
-                                ) : (
-                                  <MdKeyboardArrowRight />
-                                )}
-                                <div className={styles.navSubCategoryContainer}>
-                                  {i.sub.map((sub) => {
-                                    return (
-                                      <a key={sub} href={`${sub.linkURL}`}>
-                                        <p>{sub.linkName}</p>
-                                      </a>
-                                    );
-                                  })}
-                                </div>
-                              </div>
-                            ) : (
-                              i.linkName
-                            )}
-                          </NavDropdown.Item>
-                        </div>
-                      );
-                    }
-                  )}
-                </NavDropdown> */}
-
                 <MdKeyboardArrowRight className={styles.rightArrow} />
               </div>
-
-              {/* <div
-                className={
-                  styles.navLinksContainer +
-                  " " +
-                  styles.companyClass +
-                  " hover-underline-animation " +
-                  ` ${
-                    boldNavLink == "Company" ? "navBarLInkStyleConditional" : ""
-                  }`
-                }
-                onClick={handleNavClick}
-              >
-                <NavDropdown
-                  title={content.data[languageIndex].navHeaders[5].header.name}
-                  id="collasible-nav-dropdown"
-                >
-                  {content.data[languageIndex].navHeaders[5].header.links.map(
-                    (i) => {
-                      return (
-                        <NavDropdown.Item
-                          href={`${i.linkURL}`}
-                          key={i.linkName}
-                        >
-                          {i.linkName}
-                        </NavDropdown.Item>
-                      );
-                    }
-                  )}
-                </NavDropdown>
-
-                <MdKeyboardArrowRight className={styles.rightArrow} />
-              </div> */}
 
               <div
                 onClick={handleDisplaySearchBar}
@@ -447,7 +458,7 @@ export default function Navmenu() {
               <Nav.Link
                 href={
                   router.locale === "ar"
-                    ? "/ar/الشركة/مركز-المساعدة?lang=ar"
+                    ? "/ar/مركز-المساعدة?lang=ar"
                     : "/company/help-desk"
                 }
                 className={`hover-underline-animation`}
@@ -467,7 +478,7 @@ export default function Navmenu() {
                       height={18}
                     />
                     <span>
-                      {content.data[languageIndex].navHeaders[6].header.name}
+                      {content.data[languageIndex].navHeaders[4].header.name}
                     </span>
                   </div>
                 </div>

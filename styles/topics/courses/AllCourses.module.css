@@ -1,0 +1,12 @@
+.courses_container > div {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 767px) {
+  .courses_container > div {
+    flex-direction: column;
+    align-items: center;
+  }
+}

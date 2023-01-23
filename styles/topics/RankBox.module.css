@@ -1,0 +1,64 @@
+.box_container {
+  width: 580px;
+  background: #ffffff;
+  box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.05), 0px 2px 14px rgba(0, 0, 0, 0.08);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.box_container > div > img {
+  padding: 0.5rem 0 0.5rem 0.5rem;
+}
+.content_container > h3 {
+  margin-bottom: 1rem;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 27px;
+  color: #072a38;
+}
+.para_container {
+  display: flex;
+  gap: 0.75rem;
+}
+.lessons_container,
+.duration_container {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+.lessons_container > p {
+  font-weight: 325;
+  font-size: 16px;
+  color: #444444;
+  margin-bottom: 0;
+}
+.duration_container > p {
+  font-weight: 325;
+  font-size: 16px;
+  color: #444444;
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .box_container {
+    width: 342px;
+    height: 119px;
+    background: #ffffff;
+    box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.05),
+      0px 2px 14px rgba(0, 0, 0, 0.08);
+    border-radius: 15px;
+  }
+  .content_container {
+    gap: 1.5rem;
+  }
+  .content_container h3 {
+    font-size: 18px;
+    line-height: 0;
+  }
+  .box_container > div > img {
+    width: 140px;
+    height: 120px;
+  }
+}

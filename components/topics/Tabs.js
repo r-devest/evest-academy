@@ -1,54 +1,40 @@
 import React, { useState } from "react";
-import {
-  MDBTabs,
-  MDBTabsItem,
-  MDBTabsLink,
-  MDBTabsContent,
-  MDBTabsPane,
-} from "mdb-react-ui-kit";
-export default function Tabs() {
-  const [basicActive, setBasicActive] = useState();
-  const handleBasicClick = (value) => {
-    if (value === basicActive) {
-      return;
-    }
+import styles from "../../styles/topics/Tabs.module.css";
+import AllCourses from "../../pages/Topics/courses/AllCourses";
 
-    setBasicActive(value);
+const Tabs = () => {
+  const [activeTab, setActiveTab] = useState(0);
+  const tabs = ["Beginner", "Intermediate", "Advanced", "All"];
+  const handleClick = (index) => {
+    setActiveTab(index);
   };
-  return (
-    <>
-      <MDBTabs className="mb-3">
-        <MDBTabsItem>
-          <MDBTabsLink
-            onClick={() => handleBasicClick("tab1")}
-            active={basicActive === "tab1"}
-          >
-            Tab 1
-          </MDBTabsLink>
-        </MDBTabsItem>
-        <MDBTabsItem>
-          <MDBTabsLink
-            onClick={() => handleBasicClick("tab2")}
-            active={basicActive === "tab2"}
-          >
-            Tab 2
-          </MDBTabsLink>
-        </MDBTabsItem>
-        <MDBTabsItem>
-          <MDBTabsLink
-            onClick={() => handleBasicClick("tab3")}
-            active={basicActive === "tab3"}
-          >
-            Tab 3
-          </MDBTabsLink>
-        </MDBTabsItem>
-      </MDBTabs>
 
-      <MDBTabsContent>
-        <MDBTabsPane show={basicActive === "tab1"}>Tab 1 content</MDBTabsPane>
-        <MDBTabsPane show={basicActive === "tab2"}>Tab 2 content</MDBTabsPane>
-        <MDBTabsPane show={basicActive === "tab3"}>Tab 3 content</MDBTabsPane>
-      </MDBTabsContent>
-    </>
+  return (
+    <div className={styles.tabs_container}>
+      <div className={styles.tabs}>
+        {tabs.map((tab, index) => (
+          <div
+            key={tab}
+            className={activeTab === index ? styles.tab_active : styles.tab}
+            onClick={() => handleClick(index)}
+          >
+            {tab}
+          </div>
+        ))}
+      </div>
+
+      <div className="tab-content">
+        {activeTab === 0 && <div>Beginner Tab Content</div>}
+        {activeTab === 1 && <div>Intermediate Tab Content</div>}
+        {activeTab === 2 && <div>Advanced Tab Content</div>}
+        {activeTab === 3 && (
+          <div>
+            <AllCourses />
+          </div>
+        )}
+      </div>
+    </div>
   );
-}
+};
+
+export default Tabs;

@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import styles from "../../styles/footer/FooterSubColumn.module.css";
 export default function FooterSubColumn(props) {
   useEffect(() => {
-    console.log(props);
+    // console.log(props);
   }, []);
   return (
     <div className={styles.subcolumn_container}>

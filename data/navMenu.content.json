@@ -1,150 +1,115 @@
 {
-    "data": [
+  "data": [
+    {
+      "logoSrc": "/Images/whitelogo.png",
+      "navHeaders": [
         {
-            "logoSrc": "/Images/whitelogo.png",
-            "navHeaders": [
-                {
-                    "header": {
-                        "name": "How to"
-                     
-                    }
-                },
-                {
-                    "header": {
-                        "name": "Topics"
-                        
-                    }
-                },
-                {
-                    "header": {
-                        "name": "Webinars"
-                    }
-                },
-                {
-                    "header": {
-                        "name": "Glossary"
-                    }
-                },
-                {
-                    "header": {
-                        "name": "Educative",
-                        "links": [
-                            {
-                                "linkName": "Trading Blog",
-                                "linkURL": "/trading-blog"
-                            },
-                            {
-                                "linkName": "Trading Academy",
-                                "linkURL": "/educative/trading-academy"
-                            },
-                            {
-                                "linkName": "Demo Trading Account",
-                                "linkURL": "/start-trading/trading-demo-account"
-                            },
-                            {
-                                "linkName": "Trading News",
-                                "linkURL": "/trading-news",
-                                "sub": [
-                                    {
-                                        "linkName": "Gold news",
-                                        "linkURL": "/trading-news/gold-news"
-                                    },
-                                    {
-                                        "linkName": "Oil news",
-                                        "linkURL": "/trading-news/oil-news"
-                                    }
-                                ]
-                            }
-                        ]
-                    }
-                },
-                {
-                    "header": {
-                        "name": "Help Center",
-                        "links": "#"
-                    }
-                },
-                {
-                    "header": {
-                        "name": "Help Center",
-                        "links": "/"
-                    }
-                }
+          "header": {
+            "name": "How to",
+            "links": [
+              {
+                "linkName": "How to",
+                "linkURL": "/How-To"
+              }
             ]
+          }
         },
         {
-            "logoSrc": "/Images/navbar/logoArabic.png",
-            "navHeaders": [
-                {
-                    "header": {
-                        "name": "كيف"
-                      
-                    }
-                },
-                {
-                    "header": {
-                        "name": "مواضيع"
-                        
-                    }
-                },
-                {
-                    "header": {
-                        "name": "ندوات تدريبيّة"
-                        
-                    }
-                },
-                {
-                    "header": {
-                        "name": "القاموس"
-                    }
-                },
-                {
-                    "header": {
-                        "name": "معرفة",
-                        "links": [
-                            {
-                                "linkName": "مدونة التداول",
-                                "linkURL": "/ar/مدونة-التداول?lang=ar"
-                            },
-                            {
-                                "linkName": "أكاديمية التداول",
-                                "linkURL": "/ar/معرفة/أكاديمية-التداول?lang=ar"
-                            },
-                            {
-                                "linkName": "حساب تداول تجريبي",
-                                "linkURL": "/ar/ابدا-التداول/حساب-تداول-تجريبي?lang=ar"
-                            },
-                            {
-                                "linkName": "أخبار التداول",
-                                "linkURL": "/ar/أخبار-التداول",
-                                "sub": [
-                                    {
-                                        "linkName": "اخبار الذهب",
-                                        "linkURL": "/ar/أخبار-التداول/اخبار-الذهب"
-                                    },
-                                    {
-                                        "linkName": "اخبار النفط",
-                                        "linkURL": "/ar/أخبار-التداول/اخبار-النفط"
-                                    }
-                                ]
-                            }
-                        ]
-                    }
-                },
-            
-                {
-                    "header": {
-                        "name": "مركز المساعدة",
-                        "links": "#"
-                    }
-                },
-                {
-                    "header": {
-                        "name": "مركز المساعدة",
-                        "links": "#"
-                    }
-                }
+          "header": {
+            "name": "Topics",
+            "links": [
+              {
+                "linkName": "Topics",
+                "linkURL": "/Topics"
+              }
             ]
+          }
+        },
+        {
+          "header": {
+            "name": "Webinars",
+            "links": [
+              {
+                "linkName": "Webinars",
+                "linkURL": "/Webinars"
+              }
+            ]
+          }
+        },
+        {
+          "header": {
+            "name": "Glossary",
+            "links": [
+              {
+                "linkName": "Glossary",
+                "linkURL": "/Glossary"
+              }
+            ]
+          }
+        },
+        {
+          "header": {
+            "name": "Help Center",
+            "links": "/"
+          }
         }
-    ]
+      ]
+    },
+    {
+      "logoSrc": "/Images/navbar/logoArabic.png",
+      "navHeaders": [
+        {
+          "header": {
+            "name": "كيف",
+            "links": [
+              {
+                "linkName": "كيف",
+                "linkURL": "/ar/كيف?lang=ar"
+              }
+            ]
+          }
+        },
+        {
+          "header": {
+            "name": "مواضيع",
+            "links": [
+              {
+                "linkName": "مواضيع",
+                "linkURL": "/ar/مواضيع?lang=ar"
+              }
+            ]
+          }
+        },
+        {
+          "header": {
+            "name": "ندوات  تدريبيّة",
+            "links": [
+              {
+                "linkName": "ندوات - تدريبيّة",
+                "linkURL": "/ar/ندوات - تدريبيّة?lang=ar"
+              }
+            ]
+          }
+        },
+        {
+          "header": {
+            "name": "القاموس",
+            "links": [
+              {
+                "linkName": "القاموس",
+                "linkURL": "/ar/القاموس?lang=ar"
+              }
+            ]
+          }
+        },
+
+        {
+          "header": {
+            "name": "مركز المساعدة",
+            "links": "#"
+          }
+        }
+      ]
+    }
+  ]
 }

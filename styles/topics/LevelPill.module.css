@@ -1,0 +1,21 @@
+.levelPill {
+  margin-bottom: 1rem;
+}
+.levelPill > p {
+  font-family: "English Evest";
+  font-style: normal;
+  font-weight: 325;
+  font-size: 15px;
+  margin-bottom: 0;
+  text-align: center;
+  padding: 5px 10px;
+}
+:lang(ar) .levelPill > p {
+  font-family: "Arabic Evest2";
+}
+
+@media screen and (max-width: 767px) {
+  .levelPill > p {
+    font-size: 15px;
+  }
+}

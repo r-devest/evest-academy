@@ -9,12 +9,15 @@ import React, { useState } from "react";
 import styles from "../../styles/topics/Pills.module.css";
 export default function Pills1(props) {
   const [isActive, setIsActive] = useState(false);
+  const [isWhite, setIsWhite] = useState(false);
 
   const handleClick = () => {
-    if (!isActive) {
+    if (!isActive && !isWhite) {
       setIsActive(true);
+      setIsWhite(true);
     } else {
       setIsActive(false);
+      setIsWhite(false);
     }
   };
 
@@ -27,11 +30,12 @@ export default function Pills1(props) {
             onClick={handleClick}
             // active={basicActive === "tab1"}
             style={{
-              color: props.font_color,
+              color: isWhite ? "white" : "#16A2A0",
               border: props.border,
               borderRadius: "50px",
-              background: isActive ? "red" : "transparent",
+              background: isActive ? "#16A2A0" : "transparent",
             }}
+            id={styles.pill}
           >
             {props.pill_text}
           </MDBTabsLink>

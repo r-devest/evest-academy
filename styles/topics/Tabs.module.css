@@ -1,0 +1,44 @@
+.tabs {
+  display: flex;
+  justify-content: flex-start;
+  gap: 3rem;
+  border-bottom: 1px solid #c4edeb;
+  margin-bottom: 2rem;
+  font-family: "English Evest";
+}
+:lang(ar) .tabs {
+  font-family: "Arabic Evest2";
+}
+.tab {
+  cursor: pointer;
+  /* padding: 10px; */
+}
+
+.tab_active {
+  border-bottom: 4px solid #16a2a0;
+  text-align: center;
+  width: 10%;
+  color: #16a2a0;
+  font-weight: bold;
+}
+
+.tab-content {
+  padding: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .tabs {
+    white-space: nowrap; /* [1] */
+    overflow-x: auto; /* [2] */
+    -webkit-overflow-scrolling: touch; /* [3] */
+    -ms-overflow-style: -ms-autohiding-scrollbar; /* [4] */
+  }
+
+  /* [5] */
+  .tabs::-webkit-scrollbar {
+    display: none;
+  }
+  .tab_active {
+    width: 100%;
+  }
+}

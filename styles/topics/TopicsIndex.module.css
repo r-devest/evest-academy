@@ -1,0 +1,95 @@
+/* First section */
+.topics_s1 {
+  background-color: #f3fbfb;
+}
+:lang(ar) .topics_s1 {
+  direction: rtl;
+}
+.topics_s1 > div {
+  max-width: 1200px;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
+.pill_container {
+  display: flex;
+  gap: 1rem;
+}
+:lang(ar) .pill_container {
+  gap: 0;
+  margin-right: -3rem;
+}
+
+/* Second section */
+.topics_s2 > div {
+  max-width: 1200px;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
+:lang(ar) .topics_s2 {
+  direction: rtl;
+}
+.custom_tabs .nav-link {
+  color: red;
+  font-weight: bold;
+}
+.my_tabs .nav-link.active {
+  background-color: red;
+}
+
+.my_tab_title {
+  font-size: 20px;
+}
+
+/* Third section */
+.home_third_section {
+  background-color: #e8f8f7;
+  padding: 1rem 0 3rem 0;
+  margin-top: 3rem;
+}
+:lang(ar) .home_third_section {
+  direction: rtl;
+}
+.home_third_section > div {
+  max-width: 1200px;
+}
+.bracket_arrow {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+:lang(ar) .bracket_arrow {
+  direction: rtl;
+}
+.s3_body {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.medbox_container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+@media screen and (max-width: 767px) {
+  .pill_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  :lang(ar) .pill_container {
+    margin-right: 0;
+  }
+
+  /* Third section */
+  .s3_body {
+    flex-direction: column;
+  }
+  .home_third_section > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
